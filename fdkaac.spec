@@ -1,6 +1,6 @@
 Name:           fdkaac
 Version:        0.6.3
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        Command line frontend for libfdk-aac encoder
 
 License:        zlib
@@ -44,6 +44,9 @@ autoreconf -fiv
 
 
 %changelog
+* Sat Mar 25 2017 RPM Fusion Release Engineering <kwizart@rpmfusion.org> - 0.6.3-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_26_Mass_Rebuild
+
 * Fri Sep 16 2016 Christopher Atherton <the8lack8ox@gmail.com> - 0.6.3-3
 - Add BuildRequires autoconf automake
 
