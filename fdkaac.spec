@@ -1,6 +1,6 @@
 Name:           fdkaac
 Version:        0.6.3
-Release:        6%{?dist}
+Release:        7%{?dist}
 Summary:        Command line frontend for libfdk-aac encoder
 
 License:        zlib
@@ -44,6 +44,9 @@ autoreconf -fiv
 
 
 %changelog
+* Fri Jul 27 2018 RPM Fusion Release Engineering <sergio@serjux.com> - 0.6.3-7
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_29_Mass_Rebuild
+
 * Fri Mar 02 2018 RPM Fusion Release Engineering <leigh123linux@googlemail.com> - 0.6.3-6
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_28_Mass_Rebuild
 
