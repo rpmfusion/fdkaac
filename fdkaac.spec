@@ -1,11 +1,11 @@
 Name:           fdkaac
-Version:        0.6.3
-Release:        8%{?dist}
+Version:        1.0.0
+Release:        1%{?dist}
 Summary:        Command line frontend for libfdk-aac encoder
 
 License:        zlib
 URL:            https://github.com/nu774/%{name}
-Source:         https://github.com/nu774/%{name}/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
+Source:         %{url}/archive/%{version}.tar.gz#/%{name}-%{version}.tar.gz
 
 BuildRequires:  autoconf automake
 BuildRequires:  fdk-aac-devel
@@ -29,6 +29,7 @@ the resulting M4A.
 
 %build
 autoreconf -fiv
+export LDFLAGS="%{?__global_ldflags} -L%{_libdir}/fdk-aac"
 %configure
 %make_build
 
@@ -44,6 +45,9 @@ autoreconf -fiv
 
 
 %changelog
+* Sat Nov 24 2018 Leigh Scott <leigh123linux@googlemail.com> - 1.0.0-1
+- Update to 1.0.0
+
 * Sun Aug 19 2018 RPM Fusion Release Engineering <leigh123linux@gmail.com> - 0.6.3-8
 - Rebuilt for Fedora 29 Mass Rebuild binutils issue
 
