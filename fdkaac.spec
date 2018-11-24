@@ -7,7 +7,9 @@ License:        zlib
 URL:            https://github.com/nu774/%{name}
 Source:         %{url}/archive/%{version}.tar.gz#/%{name}-%{version}.tar.gz
 
-BuildRequires:  autoconf automake
+BuildRequires:  autoconf
+BuildRequires:  automake
+BuildRequires:  gcc
 BuildRequires:  fdk-aac-devel
 
 
