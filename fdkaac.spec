@@ -1,6 +1,6 @@
 Name:           fdkaac
 Version:        1.0.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Command line frontend for libfdk-aac encoder
 
 License:        zlib
@@ -47,6 +47,9 @@ export LDFLAGS="%{?__global_ldflags} -L%{_libdir}/fdk-aac"
 
 
 %changelog
+* Tue Mar 05 2019 RPM Fusion Release Engineering <leigh123linux@gmail.com> - 1.0.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_30_Mass_Rebuild
+
 * Sat Nov 24 2018 Leigh Scott <leigh123linux@googlemail.com> - 1.0.0-1
 - Update to 1.0.0
 
